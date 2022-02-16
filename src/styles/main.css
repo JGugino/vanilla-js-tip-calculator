@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+body{
+	background: rgb(219, 219, 219);
+}
+
+.flex{
+	display: flex;
+}
+
+header{
+	padding: 1.6em 0;
+	margin: 0 0 2rem 0;
+	text-align: center;
+}
+
+header h1{
+	text-align: center;
+	font-size: 48pt;
+	font-weight: bold;
+	margin: 1rem 0;
+	user-select: none;
+}
+
+#tip-container{
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 2.8rem;
+}
+
+#tip-inputs{
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+#tip-percent{
+	flex-direction: column;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+#tip-buttons{
+	gap: 1.2rem;
+}
+
+#tip-amount{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+}
+
+.tip-button{
+	min-width: 4rem;
+	padding: 1.2em;
+	border-radius: 10px;
+	font-size: 12pt;
+	border: 1px solid grey;
+	transition: background ease-in-out 200ms;
+	letter-spacing: 0.1rem;
+}
+
+.tip-button:hover{
+	background: lightgray;
+}
+
+.tip-button-selected{
+	background: grey;
+	color: #f5f5f5;
+}
+
+.rounded-input{
+	min-width: 18rem;
+	padding: 1em 0 1em 1.4em;
+	border-radius: 10px;
+	border: 1px solid grey;
+	font-size: 14pt;
+}
+
+#custom-tip-percent{
+	width: 4.6rem;
+	padding: 0.8em 0.4em;
+	font-size: 16pt;
+	border-radius: 10px;
+	border: 1px solid grey;
+	text-align: center;
+}
+
+#custom-tip-percent::placeholder{
+	font-size: 16pt;
+}
+
+#tip-total-amount{
+	font-size: 42pt;
+	letter-spacing: 0.6rem;
+	font-weight: bold;
+	color: #0baa0b;
+}
+
+#calc-tip-button{
+	min-width: 10rem;
+	padding: 1.2em 0;
+	border: 1px solid grey;
+	border-radius: 10px;
+	font-size: 12pt;
+	transition: background ease-in-out 200ms;
+	letter-spacing: 0.1rem;
+}
+
+#calc-tip-button:hover{
+	background: lightgray;
+}
+
+.custom-bill{
+	position: relative;
+	margin: 0 auto;
+	width: 18rem;
+}
+
+.custom-bill .dollar-icon{
+	position: absolute;
+	top: 1.2rem;
+	left: -1.1rem;
+	width: 4rem;
+	filter: invert(35%) sepia(99%) saturate(1671%) hue-rotate(94deg) brightness(103%) contrast(91%);
+}
+
+.custom-percent{
+	position: relative;
+	width: 6rem;
+}
+
+.custom-percent .percent-icon{
+	position: absolute;
+	top: 1rem;
+	right: -1rem;
+	size: 4rem;
+	/* filter: invert(35%) sepia(99%) saturate(1671%) hue-rotate(94deg) brightness(103%) contrast(91%); */
+}
+
+#error-text{
+	font-size: 14pt;
+	color: crimson;
+}
