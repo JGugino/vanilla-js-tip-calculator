@@ -5,3 +5,4 @@
 - Select a tip percentage, or enter a custom percent.
 - Tip is calculated automatically once percent or bill amount are changed. 
 
+Live Example: https://tips.gugino.org
